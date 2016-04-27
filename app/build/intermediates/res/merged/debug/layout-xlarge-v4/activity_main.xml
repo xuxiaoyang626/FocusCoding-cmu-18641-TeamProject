@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.UI_MainActivity"
+    android:background="@color/medium_ivory"
+    android:gravity="center">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/setting" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:layout_alignTop="@+id/fab"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bStartString"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="#7a2626"
+            android:typeface="serif"
+            android:id="@+id/bStart"
+            android:onClick="onStart"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="800dp"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="@string/tvTodayString"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:id="@+id/tvToday"
+            android:textColor="#691e0b"
+
+            android:layout_marginLeft="180dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#4c4c4c"
+            android:textSize="40sp"
+            android:layout_marginLeft="320dp"
+            android:text="@string/tvMainCountString"
+            android:id="@+id/tvCount"
+            android:layout_marginTop="250dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#4c4c4c"
+            android:text="@string/tvSlashString"
+            android:textSize="40sp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="250dp"
+            android:id="@+id/tvSlash1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:text="@string/tvMainTotalString"
+            android:textSize="40sp"
+            android:id="@+id/tvTotal"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="250dp"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/bStart"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/progressBar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvSolvedPrString"
+                android:textSize="30sp"
+                android:id="@+id/tvSoledPr"
+                android:layout_marginLeft="290dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivRedStar"
+                android:src="@drawable/redstar"
+                android:contentDescription="@string/ivRedString" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivGreyStar"
+                android:src="@drawable/greystar"
+                android:contentDescription="@string/ivGreyString" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvTotalPrString"
+                android:textSize="30sp"
+                android:id="@+id/tvTotalPr" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:scrollbarStyle="insideInset"
+            android:secondaryProgress="40"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

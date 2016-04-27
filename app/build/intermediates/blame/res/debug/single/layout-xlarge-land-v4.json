@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_linkin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_linkin.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_analysis.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_analysis.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_main.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_main.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/content_task.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/content_task.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_sign_in_sign_up.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_sign_in_sign_up.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/content_sign_in_sign_up.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/content_sign_in_sign_up.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_task.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_task.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/content_analysis.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/content_analysis.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/content_linkin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/content_linkin.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/activity_setting.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/activity_setting.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-land-v4/content_setting.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge-land/content_setting.xml"
+    }
+]
