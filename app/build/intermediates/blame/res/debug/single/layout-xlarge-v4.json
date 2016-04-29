@@ -1,46 +1,46 @@
 [
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_main.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_main.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_setting.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_setting.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_sign_in_sign_up.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/content_sign_in_sign_up.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_task.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_task.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_task.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/content_task.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_analysis.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_analysis.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_analysis.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_analysis.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_main.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_main.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_linkin.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_linkin.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_task.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/content_task.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_setting.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/content_setting.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_linkin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/content_linkin.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_task.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_task.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_sign_in_sign_up.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/content_sign_in_sign_up.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_sign_in_sign_up.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_sign_in_sign_up.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_analysis.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/content_analysis.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_analysis.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/content_analysis.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_sign_in_sign_up.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_sign_in_sign_up.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_setting.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/activity_setting.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/activity_linkin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/activity_linkin.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_linkin.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/layout-xlarge/content_linkin.xml"
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout-xlarge-v4/content_setting.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout-xlarge/content_setting.xml"
     }
 ]

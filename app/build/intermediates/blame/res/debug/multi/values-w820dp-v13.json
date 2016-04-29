@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/xuxiaoyang/Desktop/FocusCodingV0.5/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

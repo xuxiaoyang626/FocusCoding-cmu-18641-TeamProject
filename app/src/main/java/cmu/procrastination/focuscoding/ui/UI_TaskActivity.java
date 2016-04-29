@@ -13,7 +13,7 @@ import cmu.procrastination.focuscoding.R;
 import cmu.procrastination.focuscoding.entities.Supervisor;
 import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.entities.User;
-import cmu.procrastination.focuscoding.ws.remote.*;
+import cmu.procrastination.focuscoding.ws.remote.GetACNum;
 
 public class UI_TaskActivity extends AppCompatActivity {
     public Button testButton;
@@ -79,10 +79,7 @@ public class UI_TaskActivity extends AppCompatActivity {
      * @param view v
      */
     public void onTest(View view){
-        Test test = new Test();
-        test.loginLeetcode();
-        String res = test.fetchPage("https://leetcode.com/progress/");
-        testButton.setText(res);
+        GetACNum acNum_thread = new GetACNum(UI_TaskActivity.this, view);
+        new Thread(acNum_thread).start();
     }
-
 }

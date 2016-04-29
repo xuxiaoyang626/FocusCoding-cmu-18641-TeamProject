@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
 
 
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
+    //useLibrary 'org.apache.http.legacy'
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES.txt'
         exclude 'META-INF/DEPENDENCIES'
@@ -22,6 +24,7 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -37,14 +40,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.2.1'
     compile 'com.android.support:support-v4:23.2.1'
-    compile files('libs/commons-codec-1.9.jar')
-    compile files('libs/commons-logging-1.2.jar')
-    compile files('libs/fluent-hc-4.5.2.jar')
-    compile files('libs/httpclient-4.5.2.jar')
-    compile files('libs/httpclient-cache-4.5.2.jar')
-    compile files('libs/httpclient-win-4.5.2.jar')
-    compile files('libs/httpcore-4.4.4.jar')
-    compile files('libs/httpmime-4.5.2.jar')
-    compile files('libs/jna-4.1.0.jar')
-    compile files('libs/jna-platform-4.1.0.jar')
+    //compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+//    compile files('libs/commons-codec-1.9.jar')
+//    compile files('libs/commons-logging-1.2.jar')
+//    compile files('libs/fluent-hc-4.5.2.jar')
+//    compile files('libs/httpclient-4.5.2.jar')
+//    compile files('libs/httpclient-cache-4.5.2.jar')
+//    compile files('libs/httpclient-win-4.5.2.jar')
+//    compile files('libs/httpcore-4.4.4.jar')
+//    compile files('libs/httpmime-4.5.2.jar')
+//    compile files('libs/jna-4.1.0.jar')
+//    compile files('libs/jna-platform-4.1.0.jar')
 }
