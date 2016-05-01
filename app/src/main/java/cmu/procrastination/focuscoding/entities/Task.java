@@ -1,11 +1,13 @@
 package cmu.procrastination.focuscoding.entities;
 
+import java.io.Serializable;
+
 /**
  * Created by ximengw on 4/13/2016.
  *
  * The running task, interacts with its User and creates a Supervisor for itself.
  */
-public class Task {
+public class Task implements Serializable{
 
     private User user;
     private Supervisor supervisor;

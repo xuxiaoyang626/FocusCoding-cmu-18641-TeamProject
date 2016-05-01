@@ -19,8 +19,8 @@ public class User implements Serializable{
     private String myLCname;
     private String myLCpwd;
 
-    public User(String account){
-        myAccount = account;
+    public User(){
+        myTask = new Task(this, 0);
     }
 
     public Task getMyTask() {
