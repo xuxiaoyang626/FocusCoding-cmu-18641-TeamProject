@@ -27,7 +27,7 @@
 
         <!-- Set the login page as the home FOR NOW -->
         <activity
-            android:name=".ui.UI_SignInActivity"
+            android:name=".ui.UI_SigninActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

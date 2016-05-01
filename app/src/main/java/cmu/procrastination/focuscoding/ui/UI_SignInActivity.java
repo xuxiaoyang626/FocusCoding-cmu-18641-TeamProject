@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -19,7 +18,7 @@ import cmu.procrastination.focuscoding.R;
 import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
-public class UI_SignInActivity extends AppCompatActivity{
+public class UI_SigninActivity extends AppCompatActivity{
     public EditText etUserName;
     public EditText etPassword;
     public EditText etEmail;
@@ -35,7 +34,7 @@ public class UI_SignInActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in_sign_up);
+        setContentView(R.layout.activity_signin);
 
         //TODO for now to connect
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
@@ -49,7 +48,7 @@ public class UI_SignInActivity extends AppCompatActivity{
 
         etUserName = (EditText)findViewById(R.id.etUsr);
         etPassword = (EditText)findViewById(R.id.etPsw);
-        etEmail = (EditText)findViewById(R.id.etEmail);
+
         bSignIn = (Button)findViewById(R.id.bSignIn);
         bLinkIn = (Button)findViewById(R.id.bLinkLeet);
 
