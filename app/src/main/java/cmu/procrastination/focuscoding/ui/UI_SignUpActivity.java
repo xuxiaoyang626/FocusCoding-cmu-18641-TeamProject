@@ -74,7 +74,7 @@ public class UI_SignUpActivity extends AppCompatActivity {
             else{
                 Toast.makeText(this, "Registration complete! Please sign in!", Toast.LENGTH_LONG).show();
                 //redirect to the sign in page
-                Intent intent = new Intent(this, UI_SigninActivity.class);
+                Intent intent = new Intent(this, UI_SignInActivity.class);
                 startActivity(intent);
             }
 

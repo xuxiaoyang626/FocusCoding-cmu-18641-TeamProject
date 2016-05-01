@@ -18,7 +18,7 @@ import cmu.procrastination.focuscoding.R;
 import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
-public class UI_SigninActivity extends AppCompatActivity{
+public class UI_SignInActivity extends AppCompatActivity{
     public EditText etUserName;
     public EditText etPassword;
     public EditText etEmail;
