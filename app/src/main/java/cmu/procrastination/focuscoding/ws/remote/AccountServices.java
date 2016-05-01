@@ -11,10 +11,12 @@ package cmu.procrastination.focuscoding.ws.remote;
  */
 public interface AccountServices {
 
-    //TODO  change server address here
-    public static final String signUpAddr = "http://127.0.0.1:8080/FocusCodingServer/RegisterServlet";
-    public static final String loginAddr= "http://127.0.0.1:8080/FocusCodingServer/LoginServlet";
-    public static final String doLeetcodeAddr = "http://127.0.0.1:8080/FocusCodingServer/LCServlet";
+    //TODO  change server address here!!!
+    public static final String serverIP = "128.237.193.242";
+
+    public static final String signUpAddr = "http://"+serverIP+":8080/FocusCodingServer/RegisterServlet";
+    public static final String loginAddr= "http://"+serverIP+":8080/FocusCodingServer/LoginServlet";
+    public static final String doLeetcodeAddr = "http://"+serverIP+":8080/FocusCodingServer/LCServlet";
 
     /**
      * @param username name

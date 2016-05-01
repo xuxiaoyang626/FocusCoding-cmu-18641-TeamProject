@@ -20,7 +20,7 @@ public class UI_MainActivity extends AppCompatActivity {
     public TextView tvSolvedPr;
     public TextView tvTotalPr;
 
-    private User user;
+    private User curUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +47,18 @@ public class UI_MainActivity extends AppCompatActivity {
         tvTotalPr = (TextView)findViewById(R.id.tvTotalPr);
 
         //read contents from the input as required
-
         String count = tvCount.getText().toString();
         String total = tvTotal.getText().toString();
         String solvedPr = tvSolvedPr.getText().toString();
         String totalPr = tvTotalPr.getText().toString();
+
+        //Retrieve User object from Login activity:
+        curUser = (User) getIntent().getSerializableExtra("curUser");
+
+        //Display current progress:
+        String pro = curUser.getMyProgress()+"";
+        tvCount.setText(pro);
+
     }
 
 

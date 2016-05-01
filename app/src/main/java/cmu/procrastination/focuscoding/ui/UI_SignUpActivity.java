@@ -1,8 +1,8 @@
 package cmu.procrastination.focuscoding.ui;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,7 +20,7 @@ public class UI_SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_ui__sign_up);
 
     }
 
@@ -32,23 +32,23 @@ public class UI_SignUpActivity extends AppCompatActivity {
      */
     public void doSignUp(View view){
 
-        EditText nameEdit = (EditText) findViewById(R.id.etUsername);
-        EditText pwdEdit = (EditText) findViewById(R.id.etPassword);
-        EditText LCnameEdit = (EditText) findViewById(R.id.etLCUsername);
-        EditText LCpwdEdit = (EditText) findViewById(R.id.etLCPassword);
-        EditText emailEdit = (EditText) findViewById(R.id.etLCEmail);
+        EditText nameEdit = (EditText) findViewById(R.id.usernameEdit);
+        EditText pwdEdit = (EditText) findViewById(R.id.pwdEdit);
+        EditText LCnameEdit = (EditText) findViewById(R.id.LCUsernameEdit);
+        EditText LCpwdEdit = (EditText) findViewById(R.id.LCpwdEdit);
+        EditText emailEdit = (EditText) findViewById(R.id.emailEdit);
 
         String name = null, pwd = null, LCname = null, LCpwd = null, email = null;
         if(nameEdit!=null)
-            name = nameEdit.getText().toString();
+            name = nameEdit.getText().toString().trim();
         if(pwdEdit!=null)
-            pwd = pwdEdit.getText().toString();
+            pwd = pwdEdit.getText().toString().trim();
         if(LCnameEdit!=null)
-            LCname = LCnameEdit.getText().toString();
+            LCname = LCnameEdit.getText().toString().trim();
         if(LCpwdEdit!=null)
-            LCpwd = LCpwdEdit.getText().toString();
+            LCpwd = LCpwdEdit.getText().toString().trim();
         if(emailEdit!=null)
-            email = emailEdit.getText().toString();
+            email = emailEdit.getText().toString().trim();
 
         try{
 
@@ -58,7 +58,7 @@ public class UI_SignUpActivity extends AppCompatActivity {
 
             URL url = new URL(queryUrl);
             HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
-            urlConn.setConnectTimeout(6*1000);
+          //  urlConn.setConnectTimeout(6*1000);
 
             InputStreamReader in = new InputStreamReader(urlConn.getInputStream());
             BufferedReader buffer = new BufferedReader(in);
