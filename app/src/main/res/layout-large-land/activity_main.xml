@@ -9,7 +9,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ui.UI_MainActivity"
-    android:background="@color/medium_ivory"
     android:gravity="center">
 
     <android.support.design.widget.FloatingActionButton
@@ -38,9 +37,8 @@
             android:id="@+id/bStart"
             android:onClick="onStart"
             android:background="@drawable/button_shape"
-            android:layout_marginBottom="82dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_toEndOf="@+id/tvSoledPr" />
 
         <ProgressBar
             android:layout_width="274dp"
@@ -49,9 +47,9 @@
             style="@android:style/Widget.ProgressBar.Horizontal"
             android:scrollbarStyle="insideInset"
             android:secondaryProgress="40"
-            android:layout_marginBottom="63dp"
-            android:layout_above="@+id/ivRedStar"
-            android:layout_centerHorizontal="true" />
+            android:layout_above="@+id/bStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="214dp" />
 
 
         <LinearLayout

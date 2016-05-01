@@ -15,91 +15,88 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="5"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentStart="true"
+        android:columnCount="5">
 
 
         <Chronometer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/chronometer1"
-            android:textSize="80sp"
+            android:textSize="50sp"
             android:layout_marginLeft="100dp"
-            android:format="00:00:00"
-            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="367dp" />
+            android:format="00:00:00" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/bTestString"
             android:textColor="#ffffff"
-            android:textSize="50sp"
+            android:textSize="20sp"
             android:background="@drawable/button_test"
             android:id="@+id/bTest"
             android:onClick="onTest"
             android:layout_marginLeft="120dp"
+            android:layout_marginTop="87dp"
             android:layout_below="@+id/chronometer1"
             android:layout_centerHorizontal="true" />
 
- <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_marginTop="116dp"
-     android:layout_marginLeft="30dp"
-     android:layout_below="@+id/bTest"
-     android:layout_centerHorizontal="true">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerInParent="true">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="450dp"
             android:text="@string/tvTodayString"
-            android:layout_marginRight="30dp"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:id="@+id/tvToday"
             android:textColor="#691e0b"
 
-            android:layout_alignTop="@+id/tvCount"
-            android:layout_alignParentStart="true" />
+            />
 
         <TextView
-            android:layout_marginRight="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="#4c4c4c"
-            android:textSize="50sp"
+            android:textSize="30sp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="450dp"
             android:text="@string/tvCountString"
             android:id="@+id/tvCount"
 
-            android:layout_below="@+id/bTest"
-            android:layout_alignStart="@+id/bTest" />
+            />
 
         <TextView
-            android:layout_marginRight="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="#4c4c4c"
             android:text="@string/slashString"
-            android:textSize="50sp"
+            android:textSize="30sp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="450dp"
             android:id="@+id/tvSlash"
-            android:layout_alignTop="@+id/tvCount"
-            android:layout_alignEnd="@+id/bTest" />
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="#ff0000"
             android:text="@string/tvTotalString"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:id="@+id/tvTotal"
-            android:layout_below="@+id/bTest"
-            android:layout_toEndOf="@+id/chronometer1" />
- </LinearLayout>
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="450dp"
+            />
+         </RelativeLayout>
 
 
     </RelativeLayout>

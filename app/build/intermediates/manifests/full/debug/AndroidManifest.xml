@@ -9,6 +9,7 @@
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -35,7 +36,7 @@
         <!-- Set the login page as the home FOR NOW -->
         <activity
             android:name="cmu.procrastination.focuscoding.ui.UI_SignInSignUpActivity"
-            android:label="@string/title_activity_sign_in_sign_up"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +48,8 @@
             android:name="cmu.procrastination.focuscoding.ui.UI_LinkinActivity"
             android:label="@string/title_activity_linkin"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="cmu.procrastination.focuscoding.notification.AlarmReceiver" />
     </application>
 
 </manifest>

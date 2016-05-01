@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.UI_AnalysisActivity"
     tools:showIn="@layout/activity_analysis">
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -22,17 +22,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Analysis"
             android:textSize="50dp"
+            android:layout_centerHorizontal="true"
             android:textStyle="bold"
+
             android:textColor="#ed7474"
             android:id="@+id/textView8" />
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/tvMPSLString"
         android:textStyle="bold"
@@ -47,11 +51,10 @@
         android:layout_height="100dp"
         android:id="@+id/ivLocation"
         android:background="@drawable/map"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="80dp"
-        android:layout_alignTop="@+id/tvMPSL"
-        android:layout_alignStart="@+id/etProblemNo"
-        android:contentDescription="@string/ivLocationString" />
+        android:contentDescription="@string/ivLocationString"
+        android:layout_below="@+id/tvMPSL"
+        android:layout_alignEnd="@+id/etMPSdate" />
 
 
 
@@ -75,12 +78,11 @@
         android:text="@string/MPSDString"
         android:textSize="25sp"
         android:textColor="#f39f9f"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="100dp"
         android:ems="10"
         android:id="@+id/etMPSdate"
         android:layout_below="@+id/tvMPSD"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,12 +102,11 @@
         android:text="@string/etETFString"
         android:textSize="25sp"
         android:textColor="#f39f9f"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="50dp"
         android:ems="10"
         android:id="@+id/etETF"
         android:layout_below="@+id/tvETF"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
 
 
@@ -121,7 +122,7 @@
         android:onClick="onBack"
         android:background="@drawable/button_nalysis"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
 
 

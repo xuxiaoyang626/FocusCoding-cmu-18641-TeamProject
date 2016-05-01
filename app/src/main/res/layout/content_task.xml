@@ -43,7 +43,11 @@
             android:layout_below="@+id/chronometer1"
             android:layout_centerHorizontal="true" />
 
-
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerInParent="true">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +96,7 @@
             android:layout_marginLeft="280dp"
             android:layout_marginTop="450dp"
             />
-
+         </RelativeLayout>
 
 
     </RelativeLayout>
