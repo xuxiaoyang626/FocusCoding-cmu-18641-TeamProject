@@ -12,12 +12,12 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_action.xml"
-    },
-    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
@@ -28,12 +28,12 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_media.xml"
-    },
-    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/activity_ui_pick_one_problem.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_ui_pick_one_problem.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",

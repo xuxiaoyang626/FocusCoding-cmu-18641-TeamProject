@@ -35,7 +35,7 @@
 
         <!-- Set the login page as the home FOR NOW -->
         <activity
-            android:name="cmu.procrastination.focuscoding.ui.UI_SignInActivity"
+            android:name="cmu.procrastination.focuscoding.ui.UI_SigninActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

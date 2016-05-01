@@ -20,7 +20,7 @@ public class UI_SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ui__sign_up);
+        setContentView(R.layout.activity_signup);
 
     }
 
@@ -32,11 +32,11 @@ public class UI_SignUpActivity extends AppCompatActivity {
      */
     public void doSignUp(View view){
 
-        EditText nameEdit = (EditText) findViewById(R.id.usernameEdit);
-        EditText pwdEdit = (EditText) findViewById(R.id.pwdEdit);
-        EditText LCnameEdit = (EditText) findViewById(R.id.LCUsernameEdit);
-        EditText LCpwdEdit = (EditText) findViewById(R.id.LCpwdEdit);
-        EditText emailEdit = (EditText) findViewById(R.id.emailEdit);
+        EditText nameEdit = (EditText) findViewById(R.id.etUsername);
+        EditText pwdEdit = (EditText) findViewById(R.id.etPassword);
+        EditText LCnameEdit = (EditText) findViewById(R.id.etLCUsername);
+        EditText LCpwdEdit = (EditText) findViewById(R.id.etLCPassword);
+        EditText emailEdit = (EditText) findViewById(R.id.etLCEmail);
 
         String name = null, pwd = null, LCname = null, LCpwd = null, email = null;
         if(nameEdit!=null)
