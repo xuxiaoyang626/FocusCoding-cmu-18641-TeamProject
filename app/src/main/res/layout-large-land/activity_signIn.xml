@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.UI_SignInSignUpActivity">
+    tools:context=".ui.UI_SignInActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_sign_in_sign_up" />
+    <include layout="@layout/content_signin" />
 
 
 </android.support.design.widget.CoordinatorLayout>

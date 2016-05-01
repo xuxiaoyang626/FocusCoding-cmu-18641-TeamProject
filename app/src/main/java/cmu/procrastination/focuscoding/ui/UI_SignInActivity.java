@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,24 +19,25 @@ import cmu.procrastination.focuscoding.R;
 import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
-public class UI_SignInSignUpActivity extends AppCompatActivity implements AccountServices{
+public class UI_SignInActivity extends AppCompatActivity {
     public EditText etUserName;
     public EditText etPassword;
     public EditText etEmail;
     public Button bSignIn;
     public Button bLinkIn;
-    String username;
-    String password;
-    String email;
 
-    private User user;
+    /**
+     * User is created once log in is successful.
+     * Get LC information / user progress from the server.
+     */
+    private User curUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in_sign_up);
+        setContentView(R.layout.activity_signin);
 
-        //TODO for now
+        //TODO for now to connect
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
                 .detectDiskReads().detectDiskWrites().detectNetwork()
                 .penaltyLog().build());
@@ -47,7 +49,6 @@ public class UI_SignInSignUpActivity extends AppCompatActivity implements Accoun
 
         etUserName = (EditText)findViewById(R.id.etUsr);
         etPassword = (EditText)findViewById(R.id.etPsw);
-        etEmail = (EditText)findViewById(R.id.etEmail);
         bSignIn = (Button)findViewById(R.id.bSignIn);
         bLinkIn = (Button)findViewById(R.id.bLinkLeet);
 
@@ -73,44 +74,37 @@ public class UI_SignInSignUpActivity extends AppCompatActivity implements Accoun
             pwd = pwdText.getText().toString();
 
         //call verification function
-        boolean result = doLogIn(username, pwd);
+        boolean result = doAuthentication(username, pwd);
 
         //if invalid
-//        if(!result){
-//            Toast.makeText(this, "Invalid credentials!",  Toast.LENGTH_LONG).show();
-//            return;
-//        }
+        if(!result){
+            Toast.makeText(this, "Invalid credentials!",  Toast.LENGTH_LONG).show();
+            return;
+        }
 
-        //else
+        //Transfer the User information, and then start Main
         Intent intent = new Intent(this, UI_MainActivity.class);
+
+        /**
+         * Put serializable User object
+         */
+        intent.putExtra("curUser", curUser);
         startActivity(intent);
     }
 
     /**
-     * @param username name
-     * @param pwd      password
-     * @return sign-up result
-     */
-    @Override
-    public boolean doSignUp(String username, String pwd) {
-        return false;
-    }
-
-    /**
+     * Authenticate the user credentials with the server.
+     * Also, retrieve user information / LC info / progress and store in User.
+     *
      * @param name user
      * @param pwd  pwd
      * @return log in successful?
      */
-    @Override
-    public boolean doLogIn(String name, String pwd) {
+    public boolean doAuthentication(String name, String pwd) {
 
         try {
-            EditText nameText = (EditText) findViewById(R.id.etUsr);
-            EditText pwdTest = (EditText) findViewById(R.id.etPsw);
-
             //connect to the local server via HTTP
-            String queryUrl = AccountServices.serverAddr + "?username="
-                    + nameText.getText().toString() + "&pwd=" + pwdTest.getText().toString();
+            String queryUrl = AccountServices.loginAddr + "?username=" + name + "&pwd=" + pwd;
 
             URL url = new URL(queryUrl);
             HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
@@ -121,35 +115,39 @@ public class UI_SignInSignUpActivity extends AppCompatActivity implements Accoun
 
             InputStreamReader in = new InputStreamReader(urlConn.getInputStream());
             BufferedReader buffer = new BufferedReader(in);
-
             String inputLine =  buffer.readLine();
+
+            //check the returned result
+            if(!inputLine.startsWith("Success")){
+                return false;
+            }
+
+            //if success, also set the User with LC information / progress
+            String line = buffer.readLine();
+            String [] words = line.split(",");
+            curUser.setMyAccount(name);
+            curUser.setMyLCname(words[0]);
+            curUser.setMyLCpwd(words[1]);
+            curUser.setMyProgress(Integer.parseInt(words[2]));
 
             in.close();
             urlConn.disconnect();
-
-
-            //check the returned result
-            if(inputLine.startsWith("Success")){
-                return true;
-            }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return false;
+        return true;
     }
 
 
-    /**
-     * @param leetCodeName lc username
-     * @param pwd          lc pwd
-     * @return link result
-     */
-    @Override
-    public boolean linkLeetCode(String leetCodeName, String pwd) {
-        return false;
+    public void onSignUp(View view){
+
+        Intent intent = new Intent(this, UI_SignUpActivity.class);
+        startActivity(intent);
     }
+
+
     public void onLinkLeet(View view) {
         Intent intent = new Intent(this, UI_LinkinActivity.class);
         startActivity(intent);

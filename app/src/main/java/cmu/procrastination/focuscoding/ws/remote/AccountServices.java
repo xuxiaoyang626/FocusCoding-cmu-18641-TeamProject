@@ -12,7 +12,9 @@ package cmu.procrastination.focuscoding.ws.remote;
 public interface AccountServices {
 
     //TODO  change server address here
-    public static final String serverAddr = "http://192.168.1.152:8080/FocusCodeServer/AccountServlet";
+    public static final String signUpAddr = "http://127.0.0.1:8080/FocusCodingServer/RegisterServlet";
+    public static final String loginAddr= "http://127.0.0.1:8080/FocusCodingServer/LoginServlet";
+    public static final String doLeetcodeAddr = "http://127.0.0.1:8080/FocusCodingServer/LCServlet";
 
     /**
      * @param username name
@@ -27,14 +29,7 @@ public interface AccountServices {
      * @param pwd pwd
      * @return log in successful?
      */
-    public boolean doLogIn(String name, String pwd);
+    public boolean doAuthentication(String name, String pwd);
 
-    /**
-     *
-     * @param leetCodeName lc username
-     * @param pwd lc pwd
-     * @return link result
-     */
-    public boolean linkLeetCode(String leetCodeName, String pwd);
 
 }

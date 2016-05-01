@@ -108,6 +108,10 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/drawable/shakephone.PNG",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/drawable/shakephone.PNG"
+    },
+    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/drawable/redstar.png",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/drawable/redstar.png"
     },

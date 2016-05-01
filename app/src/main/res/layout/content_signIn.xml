@@ -9,8 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.UI_SignInSignUpActivity"
-    tools:showIn="@layout/activity_sign_in_sign_up">
+    tools:context=".ui.UI_SignInActivity"
+    tools:showIn="@layout/activity_signin">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -59,25 +59,6 @@
             android:inputType="textPassword" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/thirdLinear">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tvEmailString"
-            android:textSize="25sp"
-            android:textColor="#888888"
-            android:textStyle="bold"
-            android:id="@+id/tvEmail" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:id="@+id/etEmail" />
-    </LinearLayout>
-
     </LinearLayout>
 
     <Button
@@ -106,6 +87,28 @@
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/linearLayout2"
         android:layout_marginBottom="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you do not have an account?"
+        android:textSize="20sp"
+        android:textColor="#888888"
+        android:textStyle="normal|bold"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/button2"
+        android:layout_below="@+id/tvEmail"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:textColor="#4574db" />
 
 
 </RelativeLayout>

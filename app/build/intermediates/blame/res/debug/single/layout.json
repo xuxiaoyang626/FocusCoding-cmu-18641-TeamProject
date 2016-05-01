@@ -12,12 +12,12 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_navigation_item.xml"
-    },
-    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
@@ -30,6 +30,10 @@
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/activity_ui_pick_one_problem.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_ui_pick_one_problem.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
@@ -52,8 +56,16 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/activity_signup.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_signup.xml"
+    },
+    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/content_analysis.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/content_analysis.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/activity_signin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_signin.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
@@ -78,10 +90,6 @@
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/content_sign_in_sign_up.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/content_sign_in_sign_up.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
@@ -140,10 +148,6 @@
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_task.xml"
     },
     {
-        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/activity_sign_in_sign_up.xml",
-        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/activity_sign_in_sign_up.xml"
-    },
-    {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_item_layout.xml"
     },
@@ -190,6 +194,10 @@
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/content_signin.xml",
+        "source": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/res/layout/content_signin.xml"
     },
     {
         "merged": "/Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
