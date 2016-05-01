@@ -108,7 +108,7 @@ public class UI_SignInActivity extends AppCompatActivity{
 
             URL url = new URL(queryUrl);
             HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
-         //   urlConn.setConnectTimeout(6*1000);
+            urlConn.setConnectTimeout(10*1000);
 
             if (urlConn.getResponseCode() != 200)
                 return false;
@@ -135,6 +135,8 @@ public class UI_SignInActivity extends AppCompatActivity{
 
         } catch (Exception e) {
             //TODO connection exception here
+
+            Toast.makeText(this, "Connection problem!",  Toast.LENGTH_LONG).show();
 
             e.printStackTrace();
         }

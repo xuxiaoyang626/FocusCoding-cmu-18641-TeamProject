@@ -109,12 +109,13 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/tvEmail"
+        android:text="SIGN UP"
+        android:id="@+id/button3"
+        android:onClick="onSignUp"
+        android:layout_below="@+id/linearLayout2"
         android:layout_centerHorizontal="true"
-        android:textColor="#4359ed"
-        android:backgroundTint="@android:color/transparent" />
+        android:textColor="#4340ef"
+        android:background="@android:color/transparent" />
 
 
 </RelativeLayout>
