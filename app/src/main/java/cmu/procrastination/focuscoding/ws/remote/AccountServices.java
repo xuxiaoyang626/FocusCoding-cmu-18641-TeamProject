@@ -12,7 +12,7 @@ package cmu.procrastination.focuscoding.ws.remote;
 public interface AccountServices {
 
     //TODO  change server address here!!!
-    public static final String serverIP = "192.168.1.152";
+    public static final String serverIP = "128.237.182.19";
 
 
     public static final String signUpAddr = "http://"+serverIP+":8080/FocusCodingServer/RegisterServlet";

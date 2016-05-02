@@ -8,10 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import cmu.procrastination.focuscoding.R;
-import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.ws.local.BlockFacebookAccess;
 
@@ -21,6 +21,7 @@ public class UI_MainActivity extends AppCompatActivity {
     public TextView tvTotal;
     public TextView tvSolvedPr;
     public TextView tvTotalPr;
+    public ProgressBar progressBar;
 
     private User curUser;
 
@@ -49,7 +50,7 @@ public class UI_MainActivity extends AppCompatActivity {
         tvTotal = (TextView)findViewById(R.id.tvTotal);
         tvSolvedPr = (TextView)findViewById(R.id.tvSoledPr);
         tvTotalPr = (TextView)findViewById(R.id.tvTotalPr);
-
+        progressBar = (ProgressBar)findViewById(R.id.progressBar);
         //read contents from the input as required
         String count = tvCount.getText().toString();
         String total = tvTotal.getText().toString();

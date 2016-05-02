@@ -16,6 +16,7 @@ import java.net.URL;
 import cmu.procrastination.focuscoding.R;
 import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.entities.User;
+import cmu.procrastination.focuscoding.exception.ExceptionHandler;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
 
@@ -70,10 +71,18 @@ public class UI_SignInActivity extends AppCompatActivity {
         EditText userText = (EditText) findViewById(R.id.etUsr);
         EditText pwdText = (EditText) findViewById(R.id.etPsw);
 
-        if(userText!=null)
+        if(userText!=null) {
             username = userText.getText().toString();
-        if(pwdText!=null)
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
+        if(pwdText!=null) {
             pwd = pwdText.getText().toString();
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
 
         //call verification function
         boolean result = doAuthentication(username, pwd);

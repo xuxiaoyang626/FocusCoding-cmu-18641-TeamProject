@@ -10,7 +10,7 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
 import cmu.procrastination.focuscoding.R;
-import cmu.procrastination.focuscoding.ui.UI_MainActivity;
+import cmu.procrastination.focuscoding.ui.UI_SignInActivity;
 
 /**
  * Created by xuxiaoyang on 4/30/16.
@@ -25,7 +25,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         NotificationManager notificationManager = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
 
-        Intent notificationIntent = new Intent(context, UI_MainActivity.class);
+        Intent notificationIntent = new Intent(context, UI_SignInActivity.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 100,
@@ -36,8 +36,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         NotificationCompat.Builder mNotifyBuilder = new NotificationCompat.Builder(
                 context).setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("Alaram Fired")
-                .setContentText("Events To be PErformed").setSound(alarmSound)
+                .setContentTitle("FocusCoding!")
+                .setContentText("It's coding time. Let's starting coding!").setSound(alarmSound)
                 .setAutoCancel(true).setWhen(when)
                 .setContentIntent(pendingIntent)
                 .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000});

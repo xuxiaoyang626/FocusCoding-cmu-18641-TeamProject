@@ -63,10 +63,11 @@ public class UI_SettingActivity extends AppCompatActivity {
      */
     public void onSave(View view){
         int hour, minute, second;
-        if (problemNo == null) {
+        if (edProblemNo == null) {
             new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: PROBLEM NUMBER CANNOT BE BLANK!");
             return;
         }
+
 
         String[] times = remindTime.split(":");
         hour = Integer.valueOf(times[0]);
@@ -81,13 +82,18 @@ public class UI_SettingActivity extends AppCompatActivity {
 
         EditText goalEdit = (EditText) findViewById(R.id.etProblemNo);
         int goal = 2;   //default
-        if(goalEdit!=null){
+        if(goalEdit!=null && !goalEdit.getText().toString().equals("")){
 
             int tmp = Integer.parseInt(goalEdit.getText().toString());
-            if(tmp<=0)
+            if(tmp<=0) {
                 new ExceptionHandler().messageBox(this, "INPUT ERROR", "Goal must be more than 0!");
+                return;
+            }
 
             goal = tmp;
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: PROBLEM NUMBER CANNOT BE BLANK!");
+            return;
         }
 
         curUser.setMyTask(new Task(curUser, curUser.getMyTotal()+goal));
@@ -103,7 +109,7 @@ public class UI_SettingActivity extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(UI_SettingActivity.this, 100,intent1, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager am = (AlarmManager) UI_SettingActivity.this.getSystemService(UI_SettingActivity.this.ALARM_SERVICE);
         am.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
-        new ExceptionHandler().messageBox(this, "TIME FOR NOTIFICATION" ,"HOUR: " + hour + "MINUTE: " + minute + "SECOND: " + second);
+        //new ExceptionHandler().messageBox(this, "TIME FOR NOTIFICATION" ,"HOUR: " + hour + "MINUTE: " + minute + "SECOND: " + second);
     }
 
 }

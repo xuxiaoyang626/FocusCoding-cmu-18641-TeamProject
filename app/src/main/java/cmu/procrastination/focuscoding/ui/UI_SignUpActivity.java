@@ -13,6 +13,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import cmu.procrastination.focuscoding.R;
+import cmu.procrastination.focuscoding.exception.ExceptionHandler;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
 public class UI_SignUpActivity extends AppCompatActivity {
@@ -39,16 +40,36 @@ public class UI_SignUpActivity extends AppCompatActivity {
         EditText emailEdit = (EditText) findViewById(R.id.etLCEmail);
 
         String name = null, pwd = null, LCname = null, LCpwd = null, email = null;
-        if(nameEdit!=null)
+        if(nameEdit!=null) {
             name = nameEdit.getText().toString().trim();
-        if(pwdEdit!=null)
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
+        if(pwdEdit!=null) {
             pwd = pwdEdit.getText().toString().trim();
-        if(LCnameEdit!=null)
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
+        if(LCnameEdit!=null) {
             LCname = LCnameEdit.getText().toString().trim();
-        if(LCpwdEdit!=null)
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
+        if(LCpwdEdit!=null) {
             LCpwd = LCpwdEdit.getText().toString().trim();
-        if(emailEdit!=null)
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: USERNAME OR PASSWORD CANNOT BE BLANK!");
+            return;
+        }
+        if(emailEdit!=null) {
             email = emailEdit.getText().toString().trim();
+        } else {
+            new ExceptionHandler().messageBox(this,"INPUT ERROR", "ERROR: EMAIL ADDRESS CANNOT BE BLANK!");
+            return;
+        }
 
         try{
 
