@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import cmu.procrastination.focuscoding.R;
+import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.entities.User;
+import cmu.procrastination.focuscoding.ws.local.BlockFacebookAccess;
 
 public class UI_MainActivity extends AppCompatActivity {
     public Button bStart;
@@ -21,6 +23,9 @@ public class UI_MainActivity extends AppCompatActivity {
     public TextView tvTotalPr;
 
     private User curUser;
+
+    //goal is to be set in settings
+    private int goal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +44,6 @@ public class UI_MainActivity extends AppCompatActivity {
             });
 
         //initialize the components instance variables
-
         bStart = (Button)findViewById(R.id.bStart);
         tvCount = (TextView)findViewById(R.id.tvCount);
         tvTotal = (TextView)findViewById(R.id.tvTotal);
@@ -52,22 +56,35 @@ public class UI_MainActivity extends AppCompatActivity {
         String solvedPr = tvSolvedPr.getText().toString();
         String totalPr = tvTotalPr.getText().toString();
 
-        //Retrieve User object from Login activity:
+        //Retrieve User object from Login activity OR settings activity:
         curUser = (User) getIntent().getSerializableExtra("curUser");
 
         //Display current progress:
-        String pro = curUser.getMyProgress()+"";
-        tvCount.setText(pro);
+        String done = curUser.getMyProgress()+"";
+        tvCount.setText(done);
+
+        String goal = (curUser.getMyTask().getGoal()-curUser.getMyTotal())+"";
+        tvTotal.setText(goal);
+
+        String pro = curUser.getMyTask().getGoal()+"";
+        tvSolvedPr.setText(pro);
 
     }
 
 
     /**
-     * On clicking start button: to the task page
+     * On clicking start button:
+     * Block website access, and go to the task page
      */
     public void onStart (View view){
 
+        BlockFacebookAccess bfa = new BlockFacebookAccess();
+        bfa.castLimitation();
+
+        //pass User to Task page
         Intent intent = new Intent(this, UI_TaskActivity.class);
+
+        intent.putExtra("curUser", curUser);
         startActivity(intent);
     }
 
@@ -83,8 +100,11 @@ public class UI_MainActivity extends AppCompatActivity {
      * Helper class for the FAB to forward to Settings
      */
     public void onSettings(){
-        //go to Settings
+        //go to Settings and pass the current User:
+
         Intent intent = new Intent(getApplicationContext(), UI_SettingActivity.class);
+        intent.putExtra("curUser", curUser);
+
         startActivity(intent);
     }
 

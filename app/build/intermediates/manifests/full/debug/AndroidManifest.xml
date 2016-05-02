@@ -10,6 +10,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -32,10 +35,18 @@
             android:name="cmu.procrastination.focuscoding.ui.UI_AnalysisActivity"
             android:label="@string/title_activity_analysis"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cmu.procrastination.focuscoding.ui.UI_SignUpActivity"
+            android:label="@string/title_activity_analysis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cmu.procrastination.focuscoding.ui.UI_PickOneProblem"
+            android:label="@string/title_activity_pickone"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <!-- Set the login page as the home FOR NOW -->
         <activity
-            android:name="cmu.procrastination.focuscoding.ui.UI_SigninActivity"
+            android:name="cmu.procrastination.focuscoding.ui.UI_SignInActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

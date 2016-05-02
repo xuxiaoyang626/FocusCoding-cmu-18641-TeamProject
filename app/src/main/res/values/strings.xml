@@ -9,6 +9,7 @@
     <string name="title_activity_setting">SettingActivity</string>
     <string name="title_activity_analysis">AnalysisActivity</string>
     <string name="title_activity_sign_in_sign_up">SignInSignUpActivity</string>
+    <string name="title_activity_pickone">Pick-a-Problem</string>
     <string name="bTestString">TEST</string>
     <string name="todayString">Today:</string>
     <string name="tvTotalString">2</string>
@@ -36,7 +37,7 @@
     <string name="tcLeetCodePSWString">Leetcode Password</string>
     <string name="bSignInString">Sign in</string>
     <string name="bStartString">START</string>
-    <string name="tvTodayString">Today:</string>
+    <string name="tvTodayString">Progress:</string>
     <string name="tvMainCountString">0</string>
     <string name="tvSlashString">/</string>
     <string name="tvMainTotalString">2</string>
@@ -45,6 +46,6 @@
     <string name="ivGreyString">image</string>
     <string name="tvTotalPrString">330</string>
     <string name="title_activity_linkin">Linkin</string>
-    <string name="linkLeetString">Link Leet</string>
+    <string name="linkLeetString">LEET LOGIN</string>
     <string name="LinkINString">Link In</string>
 </resources>

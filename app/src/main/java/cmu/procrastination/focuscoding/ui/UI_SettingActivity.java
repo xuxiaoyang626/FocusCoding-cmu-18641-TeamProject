@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import java.util.Calendar;
 import cmu.procrastination.focuscoding.R;
+import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.notification.AlarmReceiver;
 import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.exception.ExceptionHandler;
@@ -48,6 +49,11 @@ public class UI_SettingActivity extends AppCompatActivity {
      */
     public void onShowAnalysis(View view){
         Intent intent = new Intent(this, UI_AnalysisActivity.class);
+
+        //pass the User:
+        User curUser = (User) getIntent().getSerializableExtra("curUser");
+        intent.putExtra("curUser", curUser);
+
         startActivity(intent);
     }
 
@@ -69,6 +75,23 @@ public class UI_SettingActivity extends AppCompatActivity {
         setUpNotification(hour, minute, second);
 
         Intent intent = new Intent(this, UI_MainActivity.class);
+
+        //set the task goal for the current User:
+        User curUser = (User) getIntent().getSerializableExtra("curUser");
+
+        EditText goalEdit = (EditText) findViewById(R.id.etProblemNo);
+        int goal = 2;   //default
+        if(goalEdit!=null){
+
+            int tmp = Integer.parseInt(goalEdit.getText().toString());
+            if(tmp<=0)
+                new ExceptionHandler().messageBox(this, "INPUT ERROR", "Goal must be more than 0!");
+
+            goal = tmp;
+        }
+
+        curUser.setMyTask(new Task(curUser, curUser.getMyTotal()+goal));
+        intent.putExtra("curUser", curUser);
         startActivity(intent);
     }
     public void setUpNotification(int hour, int minute, int second) {

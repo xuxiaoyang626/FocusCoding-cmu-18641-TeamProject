@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml
@@ -21,8 +21,16 @@ uses-permission#com.android.alarm.permission.SET_ALARM
 ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:6:5-45:19
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:11:5-60:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/AndroidManifest.xml:7:5-20
@@ -42,75 +50,91 @@ MERGED from [com.android.support:support-v4:23.2.1] /Users/xuxiaoyang/Desktop/Fo
 MERGED from [com.android.support:support-v4:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:14:9-41
 	android:supportsRtl
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:15:9-35
 	android:allowBackup
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:13:9-43
 	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:11:9-47
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:16:9-47
 activity#cmu.procrastination.focuscoding.ui.UI_MainActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:12:9-14:68
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:17:9-19:59
 	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:14:13-56
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:13:13-47
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:18:13-47
 activity#cmu.procrastination.focuscoding.ui.UI_TaskActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:15:9-18:59
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:20:9-23:59
 	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:17:13-56
-	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:18:13-56
-	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:16:13-47
-activity#cmu.procrastination.focuscoding.ui.UI_SettingActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:19:9-22:59
-	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:21:13-59
-	android:theme
 		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:22:13-56
+	android:theme
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:20:13-50
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:21:13-47
+activity#cmu.procrastination.focuscoding.ui.UI_SettingActivity
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:24:9-27:59
+	android:label
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:26:13-59
+	android:theme
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:25:13-50
 activity#cmu.procrastination.focuscoding.ui.UI_AnalysisActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:23:9-26:59
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:28:9-31:59
 	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:25:13-60
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:30:13-60
 	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:26:13-56
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:31:13-56
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:24:13-51
-activity#cmu.procrastination.focuscoding.ui.UI_SigninActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:29:9-38:20
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:29:13-51
+activity#cmu.procrastination.focuscoding.ui.UI_SignUpActivity
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:33:9-36:59
 	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:31:13-45
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:35:13-60
 	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:32:13-56
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:30:13-49
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:34:13-49
+activity#cmu.procrastination.focuscoding.ui.UI_PickOneProblem
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:38:9-41:59
+	android:label
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:40:13-59
+	android:theme
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:41:13-56
+	android:name
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:39:13-49
+activity#cmu.procrastination.focuscoding.ui.UI_SignInActivity
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:44:9-53:20
+	android:label
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:46:13-45
+	android:theme
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:47:13-56
+	android:name
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:45:13-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:33:13-37:29
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:36:17-77
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:36:27-74
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:51:27-74
 activity#cmu.procrastination.focuscoding.ui.UI_LinkinActivity
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:39:9-42:68
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:54:9-57:59
 	android:label
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:41:13-58
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:56:13-58
 	android:theme
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:42:13-56
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:57:13-56
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:40:13-49
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:55:13-49
 receiver#cmu.procrastination.focuscoding.notification.AlarmReceiver
-ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:43:9-63
+ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:58:9-63
 	android:name
-		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:43:19-61
+		ADDED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml:58:19-61
 uses-sdk
 INJECTED from /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/xuxiaoyang/Desktop/FocusCoding-cmu-18641-TeamProject/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:21:5-23:78

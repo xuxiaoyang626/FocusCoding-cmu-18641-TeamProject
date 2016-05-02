@@ -302,7 +302,7 @@
     <string name="ivGreyString">image</string>
     <string name="ivLocationString">String</string>
     <string name="ivRedString">image</string>
-    <string name="linkLeetString">Link Leet</string>
+    <string name="linkLeetString">LEET LOGIN</string>
     <string name="slashString">/</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tcLeetCodePSWString">Leetcode Password</string>
@@ -310,6 +310,7 @@
     <string name="title_activity_analysis">AnalysisActivity</string>
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="title_activity_linkin">Linkin</string>
+    <string name="title_activity_pickone">Pick-a-Problem</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="title_activity_sign_in_sign_up">SignInSignUpActivity</string>
     <string name="title_activity_task">TaskActivity</string>
@@ -329,7 +330,7 @@
     <string name="tvSlashString">/</string>
     <string name="tvSolvedPrString">110</string>
     <string name="tvTodayGoalString">Today\'s Goal:</string>
-    <string name="tvTodayString">Today:</string>
+    <string name="tvTodayString">Progress:</string>
     <string name="tvTotalPrString">330</string>
     <string name="tvTotalString">2</string>
     <string name="tvUserNameString">UserName</string>

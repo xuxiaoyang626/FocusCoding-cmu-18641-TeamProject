@@ -9,25 +9,21 @@ import java.io.Serializable;
  */
 public class Task implements Serializable{
 
-    private User user;
-    private Supervisor supervisor;
+    public User getUser() {
+        return user;
+    }
 
-    private int totalNum;
-    private int curProgress;
+    private User user;
+
+    private int goal;
 
     public Task(User u, int total){
         user = u;
-        totalNum = total;
-
-        supervisor = new Supervisor(this);
+        goal = total;
     }
 
-
-    public int getCurProgress() {
-        return curProgress;
+    public int getGoal() {
+        return goal;
     }
 
-    public void setCurProgress(int curProgress) {
-        this.curProgress = curProgress;
-    }
 }

@@ -15,6 +15,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import cmu.procrastination.focuscoding.R;
+import cmu.procrastination.focuscoding.entities.Task;
 import cmu.procrastination.focuscoding.entities.User;
 import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
@@ -108,7 +109,7 @@ public class UI_SignInActivity extends AppCompatActivity{
 
             URL url = new URL(queryUrl);
             HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
-         //   urlConn.setConnectTimeout(6*1000);
+           // urlConn.setConnectTimeout(10*1000);
 
             if (urlConn.getResponseCode() != 200)
                 return false;
@@ -128,7 +129,12 @@ public class UI_SignInActivity extends AppCompatActivity{
             curUser.setMyAccount(name);
             curUser.setMyLCname(words[0]);
             curUser.setMyLCpwd(words[1]);
-            curUser.setMyProgress(Integer.parseInt(words[2]));
+            curUser.setMyTotal(Integer.parseInt(words[2]));
+
+            // 2 to do by default:
+            curUser.setMyTask(new Task(curUser, curUser.getMyTotal()+2));
+            // 0 progress at first
+            curUser.setMyProgress(0);
 
             in.close();
             urlConn.disconnect();
@@ -136,7 +142,9 @@ public class UI_SignInActivity extends AppCompatActivity{
         } catch (Exception e) {
             //TODO connection exception here
 
+            Toast.makeText(this, "Connection problem!",  Toast.LENGTH_LONG).show();
             e.printStackTrace();
+            return false;
         }
 
         return true;

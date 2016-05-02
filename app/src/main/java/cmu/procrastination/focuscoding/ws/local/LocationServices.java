@@ -16,7 +16,6 @@ import android.os.IBinder;
 public class LocationServices extends Service implements LocationListener {
     public LocationServices() {
 
-
     }
 
     public void onStart(Intent in, int startID){
@@ -29,12 +28,13 @@ public class LocationServices extends Service implements LocationListener {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
         return null;
     }
 
     /**
      * Provide a location string. Lati,Logi
+     *
+     * For demo, check if the location is near CMU (40, -79) / HOME
      * @return string
      */
     private String getLocation(){
@@ -48,11 +48,12 @@ public class LocationServices extends Service implements LocationListener {
             //message = "My current location: Latitude ";
             Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
-            message += location.getLatitude();
-            message += ",";
+            message ="HOME";
 
-            message += location.getLongitude();
-
+            //test if the location is around CMU
+            if(location.getLatitude()>=40&&location.getLongitude()<=41)
+                if(location.getLongitude() >=-80&&location.getLongitude()<=-79)
+                    message = "CMU";
 
         } catch (SecurityException e){
 

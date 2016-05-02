@@ -7,38 +7,66 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 import cmu.procrastination.focuscoding.R;
+import cmu.procrastination.focuscoding.entities.User;
+import cmu.procrastination.focuscoding.ws.remote.AccountServices;
 
 public class UI_AnalysisActivity extends AppCompatActivity {
-    public ImageView ivLocation;
-    public EditText etMPSDate;
-    public EditText etEFT;
-    public Button bBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analysis);
 
         //initialize the components instance variables
+        TextView tv = (TextView) findViewById(R.id.bestLocation);
+        String title = tv.getText().toString();
 
-        ivLocation = (ImageView)findViewById(R.id.ivLocation);
-        etMPSDate = (EditText)findViewById(R.id.etMPSdate);
-        etEFT = ( EditText)findViewById(R.id.etETF);
-        bBack = (Button)findViewById(R.id.bBack);
+        //Retrieve the current favorite location from server:
+        User curUser = (User) getIntent().getSerializableExtra("curUser");
+        String username = curUser.getMyAccount();
+        try {
+            //connect to the local server via HTTP
+            String queryUrl = AccountServices.getStatsAddr + "?username=" + username;
 
-        //read contents from the input as required
+            URL url = new URL(queryUrl);
+            HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
 
-        String date = etMPSDate.getText().toString();
-        String eft = etEFT.getText().toString();
+            if (urlConn.getResponseCode() != 200) {
+                throw new Exception("");
+            }
+            InputStreamReader in = new InputStreamReader(urlConn.getInputStream());
+            BufferedReader buffer = new BufferedReader(in);
+            String inputLine =  buffer.readLine();
+
+            title += inputLine;
+            tv.setText(title);
+
+            urlConn.disconnect();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**
      * Go back to Settings page
-     * @param view v
+     * @param view view
      */
-    public void onBack(View view){
+    public void onGoBack(View view){
         Intent intent = new Intent(this, UI_SettingActivity.class);
+
+        User curUser = (User) getIntent().getSerializableExtra("curUser");
+        intent.putExtra("curUser", curUser);
+
         startActivity(intent);
     }
 
